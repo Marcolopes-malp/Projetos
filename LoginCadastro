@@ -1,0 +1,27 @@
+package logincadastro;
+
+import java.util.Scanner;
+
+public class LoginApp {
+    public static void main(String[] args){
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        String usuarioCorreto = "admin";
+        String senhaCorreta = "1234";
+        
+        System.out.println("=== SISTEMA DE LOGIN ===");
+        
+        System.out.print("Usuario: ");
+        String Usuario = scanner.nextLine();
+        
+        System.out.print("Senha: ");
+        String Senha = scanner.nextLine();
+        
+        if (Usuario.equals(usuarioCorreto) && Senha.equals(senhaCorreta)){
+            System.out.print("Acesso Permitido");
+        } else{
+            System.out.print("Acesso negado");
+        }
+    }
+}
